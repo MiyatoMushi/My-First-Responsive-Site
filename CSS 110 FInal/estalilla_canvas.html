@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Estalilla Canvas Drawing</title>
+
+    <style>
+        #myStyle{
+            text-align: center;
+            font-size: 24px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        #testingColors{
+            color: rgb(224, 33, 33);
+            color: rgb(114, 16, 16);
+            color: rgb(252, 80, 0);
+        }
+
+        body {
+            background-color: rgb(114, 16, 16);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Just Random Title -->
+    <h1 id="myStyle">
+        PUKOS LITAL! AR! AR! AR! AR! AR! AR!    
+    </h1>
+
+    <p style="text-align: center;">
+        <canvas id="myCanvas" width="500" height="500" style="border:5px solid">
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                //Canvas Background
+                ctx.fillStyle = "white";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                //Neck
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(190, 415, 125, 50)
+                ctx.fill(); 
+                ctx.stroke();
+                ctx.closePath();
+
+                //Left Ear Ventilator
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(65, 160, 50, 125)
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Right Ear Ventilator
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(380, 160, 50, 125)
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Square Mask
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(110, 110, 275, 325)
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Visor
+                ctx.fillStyle = 'rgb(252, 80, 0)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 20;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(160, 160, 175, 100)
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Left Nose Ventilator  
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(160, 375, 80, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                ctx.fillStyle = 'rgb(114, 16, 16)';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(160, 375, 50, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Right Nose Ventilator
+                ctx.fillStyle = 'rgb(224, 33, 33)';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(340, 375, 80, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                
+                ctx.fillStyle = 'rgb(114, 16, 16)';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(340, 375, 50, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+            </script>
+        </canvas> 
+    </p>
+    <!-- Display Text, Name, Course/Year/Section and Subject Title -->
+    <p id="myStyle"> Lethal Company Logo in HTML Canvas by Estalilla, John Carlo B. </p>
+    <p id="myStyle"> BSEMC-2A Computer Graphics Programming </p>
+</body>
+</html>

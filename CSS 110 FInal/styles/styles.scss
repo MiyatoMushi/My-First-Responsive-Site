@@ -1,0 +1,149 @@
+@import 'navbar';
+@import 'colors';
+@import 'media-queries';
+
+//Main
+body {
+  background: $lightBlue;
+}
+
+.pic {
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+}
+
+.members_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+}
+
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  margin: 10px;
+  width: 300px;
+  height: auto;
+  background: $dark;
+}
+
+.members_name {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  &:hover {
+      color: $blue;
+  }
+}
+
+.members_sn {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  &:hover {
+      color: $blue;
+  }
+}
+
+//Other Layouts
+@include tablet {
+  .pic {
+    margin: 40px;
+    width: 200px;
+    height: 200px;
+  }
+  .members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    background: $dark;
+  }
+  .members_name {
+    color: $white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    &:hover {
+        color: $blue;
+    }
+  }
+  .members_sn {
+    color: $white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    &:hover {
+        color: $blue;
+    }
+  }
+}
+
+@include mobile {
+  .pic {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 5px;
+    margin: 5px;
+    width: 150px;
+    height: auto;
+    background: $dark;
+  }
+  .members_name {
+    color: $white;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    &:hover {
+        color: $blue;
+    }
+  }
+  .members_sn {
+    color: $white;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    &:hover {
+        color: $blue;
+    }
+  }
+}
+
+//For Activities Page

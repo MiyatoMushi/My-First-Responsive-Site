@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Midterm Canvas</title>
+    <style>
+
+        body {
+            background-color: black;
+        }  
+    </style>
+</head>
+
+<body>
+    <p style="color: blanchedalmond; text-align: center;">
+        MIDTERM PANDA CANVAS by ESTALILLA, JC.
+    </p>
+    <p style="text-align: center;">
+        <canvas id="myCanvas" width="600px" height="600px" style="background-color: white;">
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+                
+                //Left Arm
+                ctx.fillStyle = 'black';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(100, 310, 100, 25);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Right Arm
+                ctx.fillStyle = 'black';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(350, 300, 100, 25);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Left Leg
+                ctx.fillStyle = 'black';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(200, 450, 50, 100);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Right Leg
+                ctx.fillStyle = 'black';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(315, 450, 35, 100);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+                
+                //Body
+                ctx.fillStyle = 'white';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.rect(200, 250, 150, 200)
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                //Left Ear
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(150, 75, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Right Ear
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(400, 75, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Head
+                ctx.fillStyle = 'white';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 10;
+                ctx.beginPath();
+                ctx.fill();
+                ctx.scale(1,0.75);
+                ctx.arc(275, 250, 175, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                
+                //Right Pink Mark
+                ctx.fillStyle = 'pink';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.scale(0.75,1);
+                ctx.arc(200, 290, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Left Eye
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(280, 250, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Right Pink Mark
+                ctx.fillStyle = 'pink';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(525, 290, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Right Eye
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(440, 250, 40, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+
+                //Nose
+                ctx.fillStyle = 'black';
+                ctx.beginPath();
+                ctx.fill();
+                ctx.arc(360, 300, 15, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath(); 
+                
+                //Mouth
+                ctx.beginPath();
+                ctx.bezierCurveTo(360, 340, 380, 400, 410, 340);
+                ctx.lineWidth = "5" ;
+                ctx.stroke();
+                ctx.closePath();
+                
+
+            </script>
+    
+        </canvas>
+    </p>
+
+                <!-- ctx.beginPath();
+                ctx.bezierCurveTo(100, 250, 250, 200, 400, 250);
+                ctx.lineWidth = "10" ;
+                ctx.fill
+                ctx.stroke(); -->
+    
+</body>
+</html>

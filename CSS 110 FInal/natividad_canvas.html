@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah Daniel Y. Natividad</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Isaiah Daniel Y. Natividad, BSEMC-2A</h1>
+    <canvas id="myCanvas" width="500" height="600" style="border: 5px solid; margin-inline: auto; display: block;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        //Antenna 2
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.bezierCurveTo(200, 300, 200, 200, 125, 100);
+        ctx.stroke();
+        ctx.closePath();
+
+        //Face
+        ctx.fillStyle = "yellow";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.arc(250, 350, 150, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        //Eyes
+        ctx.fillStyle = "black";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.ellipse(280, 330, 22, 33, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.ellipse(273, 320, 9, 13, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "black";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.ellipse(175, 330, 22, 33, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.ellipse(168, 320, 9, 13, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+
+        //Blush
+        ctx.fillStyle = "red";
+        ctx.beginPath();
+        ctx.ellipse(155, 400, 28, 15, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        ctx.beginPath();
+        ctx.ellipse(315, 400, 28, 15, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+
+        //Mouth
+        ctx.fillStyle = "black";
+        ctx.beginPath();
+        ctx.ellipse(235, 420, 45, 35, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "yellow";
+        ctx.beginPath();
+        ctx.ellipse(233, 410, 45, 35, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+
+        //Antenna 1
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.bezierCurveTo(300, 260, 335, 175, 280, 100);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fillStyle = "black";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.rotate(60 * Math.PI / 180);
+        ctx.ellipse(220, -190, 25, 14, 0, 0, 2 * Math.PI, false);
+        ctx.fill()
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.rotate(-25 * Math.PI / 300);
+        ctx.ellipse(255, -128, 11, 7, 0, 0, 2 * Math.PI, false);
+        ctx.fill()
+        ctx.closePath();
+
+        //Antenna 2
+        ctx.fillStyle = "black";
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.rotate(15 * Math.PI / 180);
+        ctx.ellipse(160, -55, 25, 14, 0, 0, 2 * Math.PI, false);
+        ctx.fill()
+        ctx.stroke();
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.beginPath();
+        ctx.rotate(-25 * Math.PI / 300);
+        ctx.ellipse(160, -15, 11, 7, 0, 0, 2 * Math.PI, false);
+        ctx.fill()
+        ctx.closePath();
+        
+        //Eyes Grey
+        ctx.fillStyle = "grey";
+        ctx.beginPath();
+        ctx.rotate(-25 * Math.PI / 300);
+        ctx.ellipse(423, 155, 6, 9, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "grey";
+        ctx.beginPath();
+        ctx.ellipse(332, 208, 6, 9, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+    </script>
+</body>
+</html>

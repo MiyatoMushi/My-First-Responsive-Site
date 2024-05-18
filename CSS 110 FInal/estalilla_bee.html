@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Estalilla Bee SVG</title>
+    <style>
+        /*For Tests*/
+        #myTextStyle{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            color: rgb(251, 255, 0);
+        }
+
+        /*For Background*/
+        body{
+            background-color: rgb(152, 197, 255);
+        }
+
+        /*this was only used for testing colors
+        #testingColors{
+            color: rgb(240, 209, 34);
+            color: rgb(22, 22, 22);
+            color: rgb(248, 51, 51);
+            color: rgb(122, 122, 122);
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1 id="myTextStyle">
+        <!-- Just my name display -->
+        <p>My Bee Creation made by John Carlo B. Estalilla</p>
+    </h1>
+
+    <h2 style="text-align: center;">
+        <svg width ="500" height ="500" style="background-color: white;">
+            <!-- Bee Circle Head/Face -->
+            <circle cx="250" cy="300" r="150" stroke="black" stroke-width="10px" fill="rgb(240, 209, 34)"></circle>
+
+            <!-- Outer Eyes -->
+            <ellipse rx="25" ry="35" cx="175" cy="275"></ellipse>
+            <ellipse rx="25" ry="35" cx="280" cy="275"></ellipse>
+
+            <!-- Inner Eyes Left -->
+            <ellipse rx="8" ry="12" cx="168" cy="265" fill="white"></ellipse>
+            <ellipse rx="6" ry="10" cx="168" cy="290" fill="rgb(122, 122, 122)" transform="rotate(30 175 320)"></ellipse>
+
+            <!-- Inner Eyes Right -->
+            <ellipse rx="8" ry="12" cx="273" cy="265" fill="white"></ellipse>
+            <ellipse rx="6" ry="10" cx="168" cy="290" fill="rgb(122, 122, 122)" transform="rotate(30 225 515)"></ellipse>
+
+            <!-- Face Cheeks/Red Blushes alt + 0176 -->
+            <ellipse rx="24" ry="12" cx="300" cy="350" fill="rgb(248, 51, 51)"></ellipse>
+            <ellipse rx="24" ry="12" cx="150" cy="350" fill="rgb(248, 51, 51)"></ellipse>
+
+            <!-- Mouth -->
+            <path d="M 190 385 q 50 20 80 -7" stroke="black" stroke-width="10" fill = "none"></path>
+            <ellipse rx="24" ry="12" cx="150" cy="350" fill="rgb(248, 51, 51)"></ellipse>
+
+            <!-- Left Antenae -->
+            <path d="M 100 90 q 25 -5 80 75" stroke="black" stroke-width="10" fill = "none"></path>
+            <ellipse rx="30" ry="20" cx="120" cy="25" transform="rotate(30)"></ellipse>
+            <ellipse rx="12" ry="8" cx="110" cy="22" fill="white" transform="rotate(30)"></ellipse>
+
+            <!-- Right Antenae -->
+            <path d="M 250 75 q 50 25 50 125" stroke="black" stroke-width="10" fill = "none"></path>
+            <ellipse rx="30" ry="20" cx="250" cy="-60" transform="rotate(30)"></ellipse>
+            <ellipse rx="12" ry="8" cx="240" cy="-63" fill="white" transform="rotate(30)"></ellipse>
+
+        </svg>
+    </h2>
+
+</body>
+</html>

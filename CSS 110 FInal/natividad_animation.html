@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaiah Daniel Y. Natividad</title>
+  <style>
+
+    .post{
+  height: 290px;
+  width: 10px;
+  background-color: gray;
+  position: relative;
+  top: 30px;
+  left: 775px;
+  }
+   .rect{
+  height: 110px;
+  width: 50px;
+  background-color: black;
+  border-radius: 15%;
+  position: relative;
+  right: 20px;
+}
+  .light1{
+  height: 28px;
+  width: 28px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+  right: 9px;
+  bottom: 100px;
+  animation-name: greenLight;
+  animation-duration: 6s;
+}
+@keyframes greenLight { 
+     0%{background-color: gray;}
+     25%{background-color: grey;}
+     27%{background-color: gray;}
+     28%{background-color: green;}
+     100%{background-color: green;}
+  }
+  .light2{
+  height: 28px;
+  width: 28px;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
+  right: 9px;
+  bottom: 96px;
+  animation-name: yellowLight;
+  animation-duration: 6s;
+}
+@keyframes yellowLight { 
+     0%{background-color: gray;} 
+     16%{background-color: gray;}
+     17%{background-color: yellow;}
+     20%{background-color: yellow;}
+     25%{background-color: yellow;}
+     26%{background-color: gray;}
+     100%{background-color: gray;}
+  }
+  .light3{
+  height: 28px;
+  width: 28px;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
+  right: 9px;
+  bottom: 93px;
+  animation-name: redLight;
+  animation-duration: 6s;
+}
+@keyframes redLight { 
+     0%{background-color: red;}
+     10%{background-color: red;}
+     11%{background-color: red;}
+     12%{background-color: gray;}
+     50%{background-color: gray;}
+     100%{background-color: gray;}
+  }
+
+#carCanvas{ 
+    right: 900px;
+    top: 100px;
+    position: absolute;
+    animation-name: moveCar;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+  }
+   @keyframes moveCar { 
+     0%{right: 0px;}
+     25%{right: 0px;}
+     100%{right: 900px;}
+  }
+  </style>
+</head>
+<body>
+<div>  
+<!-- traffic lights -->
+<div class="post">
+  <div class="rect"></div>
+  <div class="light1"></div>
+  <div class="light2"></div>
+  <div class="light3"></div>
+</div>
+<canvas id="carCanvas" width="400" height="300" style="margin-inline: auto; display: block;">
+</canvas>
+<script>
+var canvas = document.getElementById("carCanvas");
+var ctx = canvas.getContext("2d");
+//car
+ctx.beginPath();
+ctx.fillStyle = "blue";
+ctx.fillRect(150, 125, 150, 100);
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.fillStyle = "blue";
+ctx.fillRect(75, 170, 270, 60);
+ctx.fill();
+ctx.closePath();
+ctx.beginPath();
+ctx.fillStyle = "gray";
+ctx.arc(135, 225, 30, 0, 2 * Math.PI);
+ctx.arc(290, 225, 30, 0, 2 * Math.PI);
+ctx.fill();
+ctx.closePath();
+</script>
+</div>
+</body>
+</html>

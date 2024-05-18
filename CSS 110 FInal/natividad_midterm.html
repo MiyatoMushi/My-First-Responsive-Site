@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah Daniel Y. Natividad</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Isaiah Daniel Y. Natividad, BSEMC-2A</h1>
+    <h1 style="text-align: center;">Midterm Exam</h1>
+    <canvas  id="myCanvas" width="500" height="500" style="border: 5px solid; margin-inline: auto; display: block; background-color: antiquewhite;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        //clothes
+        ctx.fillStyle = "yellow";
+        ctx.beginPath(); 
+        ctx.ellipse(250, 410, 90, 23, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "#E2E2E2";
+        ctx.beginPath(); 
+        ctx.fillRect(185, 393, 130, 43)
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "red";
+        ctx.beginPath(); 
+        ctx.fillRect(245, 393, 5, 43)
+        ctx.fill();
+        ctx.closePath();
+
+        //hair
+        ctx.fillStyle = "red";
+        ctx.beginPath(); 
+        ctx.arc(250, 250, 150, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.closePath();
+
+        //face
+        ctx.fillStyle = "white";
+        ctx.beginPath(); 
+        ctx.arc(250, 305, 110, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.closePath();
+
+        //hair2
+        ctx.fillStyle = "red";
+        ctx.beginPath(); 
+        ctx.ellipse(220, 200, 55, 35, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+
+        //eyes
+        ctx.fillStyle = "black";
+        ctx.beginPath(); 
+        ctx.arc(200, 320, 10, 0, 2*Math.PI);
+        ctx.arc(300, 320, 10, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.closePath();
+
+        //nose
+        ctx.fillStyle = "red";
+        ctx.beginPath(); 
+        ctx.ellipse(250, 330, 25, 18, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillStyle = "white";
+        ctx.beginPath(); 
+        ctx.ellipse(258, 325, 7, 5, 0, 0, 2 * Math.PI, false);
+        ctx.fill();
+        ctx.closePath();
+
+        //mouth
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 20;
+        ctx.beginPath();
+        ctx.moveTo(220, 355);
+        ctx.bezierCurveTo(230, 385, 270, 385, 280, 355);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(225, 365);
+        ctx.bezierCurveTo(230, 380, 265, 385, 275, 365);
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+</body>
+</html>
