@@ -3,14 +3,22 @@
 @import 'media-queries';
 
 //Main
-body {
+html, body {
   background: $lightBlue;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .pic {
   margin: 40px;
   width: 200px;
   height: 200px;
+  border: 5px solid $white;
+  &:hover {
+    border: 10px solid $blue;
+  }
 }
 
 .members_container {
@@ -25,6 +33,7 @@ body {
 }
 
 .members {
+  border: 2px solid $white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +44,12 @@ body {
   width: 300px;
   height: auto;
   background: $dark;
+  @include desktop {
+    border: 5px solid $white;
+  }
+  &:hover {
+    border: 5px solid $blue;
+  }
 }
 
 .members_name {
@@ -67,8 +82,13 @@ body {
     margin: 40px;
     width: 200px;
     height: 200px;
+    border: 4px solid $white;
+    &:hover {
+      border: 8px solid $blue;
+    }
   }
   .members {
+    border: 4px solid $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +99,9 @@ body {
     width: 300px;
     height: auto;
     background: $dark;
+    &:hover {
+      border: 4px solid $blue;
+    }
   }
   .members_name {
     color: $white;
@@ -109,8 +132,13 @@ body {
     margin: 20px;
     width: 100px;
     height: 100px;
+    border: 2px solid $white;
+    &:hover {
+      border: 4px solid $blue;
+    }
   }
   .members {
+    border: 2px solid $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +149,9 @@ body {
     width: 150px;
     height: auto;
     background: $dark;
+    &:hover {
+      border: 2px solid $blue;
+    }
   }
   .members_name {
     color: $white;
@@ -146,4 +177,31 @@ body {
   }
 }
 
-//For Activities Page
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.course {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  &:hover {
+      color: $dark;
+  }
+  @include desktop {
+    font-size: 40px;
+  }
+
+}
+
+.bottom_bar {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

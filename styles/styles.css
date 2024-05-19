@@ -10,6 +10,7 @@
   background: #2E86C1;
   height: 80px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 label.logo {
@@ -140,14 +141,34 @@ body {
     left: 0;
   }
 }
-body {
+.bottom_bar {
+  background: #2E86C1;
+  height: 80px;
+  width: 100%;
+  position: 0;
+}
+@media screen and (min-width: 1025px) {
+  .bottom_bar {
+    margin-top: 70px;
+  }
+}
+
+html, body {
   background: #5DADE2;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .pic {
   margin: 40px;
   width: 200px;
   height: 200px;
+  border: 5px solid #EBEDEF;
+}
+.pic:hover {
+  border: 10px solid #2E86C1;
 }
 
 .members_container {
@@ -164,6 +185,7 @@ body {
 }
 
 .members {
+  border: 2px solid #EBEDEF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,6 +196,14 @@ body {
   width: 300px;
   height: auto;
   background: #2E4053;
+}
+@media screen and (min-width: 1025px) {
+  .members {
+    border: 5px solid #EBEDEF;
+  }
+}
+.members:hover {
+  border: 5px solid #2E86C1;
 }
 
 .members_name {
@@ -205,8 +235,13 @@ body {
     margin: 40px;
     width: 200px;
     height: 200px;
+    border: 4px solid #EBEDEF;
+  }
+  .pic:hover {
+    border: 8px solid #2E86C1;
   }
   .members {
+    border: 4px solid #EBEDEF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,6 +252,9 @@ body {
     width: 300px;
     height: auto;
     background: #2E4053;
+  }
+  .members:hover {
+    border: 4px solid #2E86C1;
   }
   .members_name {
     color: #EBEDEF;
@@ -246,8 +284,13 @@ body {
     margin: 20px;
     width: 100px;
     height: 100px;
+    border: 2px solid #EBEDEF;
+  }
+  .pic:hover {
+    border: 4px solid #2E86C1;
   }
   .members {
+    border: 2px solid #EBEDEF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -258,6 +301,9 @@ body {
     width: 150px;
     height: auto;
     background: #2E4053;
+  }
+  .members:hover {
+    border: 2px solid #2E86C1;
   }
   .members_name {
     color: #EBEDEF;
@@ -281,4 +327,33 @@ body {
   .members_sn:hover {
     color: #2E86C1;
   }
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.course {
+  color: #EBEDEF;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.course:hover {
+  color: #2E4053;
+}
+@media screen and (min-width: 1025px) {
+  .course {
+    font-size: 40px;
+  }
+}
+
+.bottom_bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

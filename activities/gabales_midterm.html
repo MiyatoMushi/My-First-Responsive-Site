@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="1" width="360" height="277"  alt="Jollibee" style="border: 1px solid grey;"></canvas>
+    <script>
+        const canvas = document.getElementById("1");
+        const ctx= canvas.getContext("2d");
+        ctx.fillStyle = "black";
+        
+        //body//
+        ctx.beginPath();
+        ctx.rect(163, 100, 35, 100);
+        ctx.stroke();
+        ctx.closePath();
+
+        //arm right//
+        ctx.beginPath();
+        ctx.ellipse(217,170,20,7,0,0,2*Math.PI)
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+        //arm left//
+        ctx.beginPath();
+        ctx.ellipse(145,175,20,7,9,0,2*Math.PI)
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+        //leg right//
+        ctx.beginPath();
+        ctx.ellipse(193,200,7,29,9.3,3,2*Math.PI)
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+        //leg left//
+        ctx.beginPath();
+        ctx.ellipse(169,201,7,29,9.7,3,2*Math.PI)
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+
+        //base head//
+        ctx.beginPath();
+        ctx.arc(140,75,15,0,2*Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(220,75,15,0,2*Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        ctx.closePath();      
+
+        ctx.beginPath();
+        ctx.arc(180,120,50,0,2*Math.PI);    
+        ctx.stroke();
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(165,120,10,0,2*Math.PI);
+        ctx.fillStyle = "black"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(195,120,10,0,2*Math.PI);
+        ctx.fillStyle = "black"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(181,135,2,0,2*Math.PI);
+        ctx.fillStyle = "black"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.ellipse(213,135,10,5,0,0,2*Math.PI)
+        ctx.fillStyle = "pink"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.ellipse(147,135,10,5,0,0,2*Math.PI)
+        ctx.fillStyle = "pink"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.arc(181,140,5,3,0,4,2*Math.PI)   
+        ctx.stroke();
+        ctx.fillStyle = "white";
+        ctx.fill();
+        ctx.closePath();
+
+</script>
+
+
+
+
+
+
+
+
+
+    
+                 
+    </script>
+   
+    
+</body>
+</html>

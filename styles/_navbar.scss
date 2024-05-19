@@ -13,6 +13,7 @@
     background: $blue;
     height: 80px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 label.logo {
@@ -145,4 +146,13 @@ body {
     }
 }
 
-//Activities Page
+//Bottom Bar
+.bottom_bar {
+    background: $blue;
+    height: 80px;
+    width: 100%;
+    position: 0;
+    @include desktop {
+        margin-top: 70px;
+    }
+}

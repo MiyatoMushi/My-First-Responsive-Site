@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas ID="myCanvas" width="680" height="550" style="border: 5px solid">
+    </canvas>
+    <script>
+        
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext("2d");
+
+            var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = '#101010';
+        ctx.strokeStyle = 'black'
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.arc(320,240,200, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'white';
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.arc(320, 230, 125, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.font = '150px Arial Black';
+        ctx.fillStyle = '#101010';
+        ctx.fillText("8", 270, 285);
+    </script>
+</body>
+</html>
